@@ -5,4 +5,16 @@ class StudentsController < ApplicationController
     render json: students
   end
 
+  def show
+    render json: Student.find(params[:id])
+  end
+
+  def grades
+
+  end
+
+  def highest_grade
+
+  end
+
 end
